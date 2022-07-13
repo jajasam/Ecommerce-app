@@ -1,7 +1,9 @@
+import "../styles/BestGear.css"
+
 function BestGear() {
     return (
-        <div>
-            <div class="business-purpose-text">
+        <div className="best-gear">
+            <div className="business-purpose-text">
             <h2>Bringing you the <span>best</span>audio gear</h2>
             <p>
               Bringing you the best audio gear
@@ -12,7 +14,7 @@ function BestGear() {
               audio equipment.
             </p>
         </div>
-        <div class="img business-purpose-img"></div>
+        <div className="img business-purpose-img"></div>
         </div>
     )
 }

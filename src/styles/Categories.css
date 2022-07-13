@@ -1,0 +1,64 @@
+.categories {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 10.5rem;
+}
+  
+.category {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+  
+.category span {
+  height: 250px;
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  width: 250px;
+}
+
+#category_headphones span {
+  background-image: url("../assets/shared/desktop/image-category-thumbnail-headphones.png");
+}
+  
+#category_speakers span {
+  background: url("../assets/shared/desktop/image-category-thumbnail-speakers.png");
+}
+
+#category_earphones span {
+  background: url("../assets/shared/desktop/image-category-thumbnail-earphones.png");
+}
+
+.category div {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+.category h5 {
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.category button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category button::after {
+  content: ">";
+}
+
+.category button:hover::after {
+  content: "    >";
+}

@@ -1,6 +1,8 @@
-function Product() {
+import "../styles/FeaturedProducts.css";
+
+function FeaturedProducts() {
     return (
-        <div>
+        <div className="products">
             <div id="ZX9-speaker">
             <span class="img" id="ZX9-speaker_img"></span>
             <div>
@@ -22,10 +24,10 @@ function Product() {
                 <h3>YX1 earphones</h3>
                 <button class="btn secondary-btn">See product</button>
                 </div>
-          </div>
+            </div>
         </div>
         </div>
     )
 }
 
-export default Product
+export default FeaturedProducts

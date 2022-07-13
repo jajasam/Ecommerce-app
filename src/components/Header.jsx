@@ -1,8 +1,8 @@
 import "../styles/Header.css";
 
-function Header() {
+function Header({isOnHero = true}) {
     return (
-        <header>
+        <header className={isOnHero ? "" : "header-bg"}>
             <div className="header-content">
                 <div className="nav-bar">
                     <div className="logo img"></div>
