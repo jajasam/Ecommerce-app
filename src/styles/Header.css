@@ -1,0 +1,47 @@
+header {
+  background-color: black;
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 30px;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+  
+  .logo {
+    background-image: url("../assets/shared/desktop/logo.svg");
+    width: 160px;
+    height: 25px;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    text-transform: uppercase;
+    padding-left: 0;
+    margin-top: 0;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  
+  .nav-bar a {
+      color: white;
+      text-decoration: none;
+  }
+  
+  .cart-icon {
+    background-image: url("../assets/shared/desktop/icon-cart.svg");
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
