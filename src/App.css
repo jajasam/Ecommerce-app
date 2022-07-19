@@ -88,3 +88,12 @@ a {
   width: 1100px;
   margin: 0 auto;
 }
+
+.products_container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 150px;
+  margin-bottom: 250px;
+  max-width: 1100px;
+}
