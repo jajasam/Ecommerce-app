@@ -14,7 +14,6 @@
 }
 
 #ZX9-speaker_img {
-  background-image: url("../assets/home/desktop/image-speaker-zx9.png");
   width: 400px;
   height: 500px;
 }
@@ -75,10 +74,8 @@
 }
 
 #YX1-earphones_img {
-    background-image: url("../assets/home/desktop/image-earphones-yx1.jpg");
     width: 540px; 
     border-radius: 8px;
-
 }
 
 #YX1-earphones .product-infos {

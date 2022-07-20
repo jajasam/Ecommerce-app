@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import "../styles/Product.css";
 import "../App.css"
 
@@ -23,7 +25,7 @@ function Product({productData, isOdd}) {
                 {productData.new && <h4>New product</h4>}
                 <h3>{name}</h3>
                 <p>{description}</p>
-                <button className="btn primary-btn">See product</button>
+                <Link to={`/product/${id}`} state={{productId: id}}><button className="btn primary-btn">See product</button></Link>
                 </div>
             </div>
         </div>

@@ -48,9 +48,6 @@ a {
 .primary-btn {
   background-color: var(--orange1);
   border: none;
-}
-
-.primary-btn a {
   color: var(--white0);
 }
 
@@ -68,13 +65,9 @@ a {
   background-color: black;
 }
 
-.shop-btn a {
+.shop-btn {
   color: black;
 }
-
-
-
-
 
 /* 
 ***************************************

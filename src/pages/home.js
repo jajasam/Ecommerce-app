@@ -10,7 +10,7 @@ function Home() {
     return (
         <div className="content">
             <Hero />
-            <Categories />
+            <Categories  />
             <FeaturedProducts />
             <BestGear />
             <Footer />
@@ -18,4 +18,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Home;

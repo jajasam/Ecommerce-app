@@ -26,9 +26,8 @@
     padding-right: 10px;
 }
 
-.business-purpose-img {
+.best-gear-img {
     width: 540px;
-    background-image: url("../assets/shared/desktop/image-best-gear.jpg");
     border-radius: 8px;
 }
 
@@ -37,5 +36,4 @@
     line-height: 25px;
     opacity: 0.5;
     max-width: 500px;
-
 }

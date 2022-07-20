@@ -1,5 +1,7 @@
 import "../styles/BestGear.css"
 
+import { ScreenSizeContext } from "../App"
+
 function BestGear() {
     return (
         <div className="best-gear">
@@ -14,7 +16,11 @@ function BestGear() {
               audio equipment.
             </p>
         </div>
-        <div className="img business-purpose-img"></div>
+        <ScreenSizeContext.Consumer> 
+            {screenSize => (
+                <img className="img best-gear-img" src={require(`../assets/shared/${screenSize}/image-best-gear.jpg`)} alt="Best gear" />
+            )}
+        </ScreenSizeContext.Consumer>
         </div>
     )
 }

@@ -1,27 +1,36 @@
 import './App.css';
+import { useState, createContext } from "react"
 import { Routes, Route } from "react-router-dom";
-
-import data from "./assets/data.json";
 
 import Home from "./pages/home";
 import Category from "./pages/category";
+import ProductPage from "./pages/product"
+
+export const ScreenSizeContext = createContext()
 
 function App() {
-  console.log(data)
+  const [screenSize, setScreenSize] = useState(screenSizeName(window.innerWidth))
 
-  function filterByCategory(categoryName) {
-    return data.filter(elem => elem.category === categoryName);
+  window.addEventListener("resize", function() {
+    setScreenSize(screenSizeName(window.innerWidth))
+  })
+
+  function screenSizeName(innerWidth) {
+    if (innerWidth > 1100) return "desktop"
+    if (innerWidth >= 500) return "tablet"
+    if (innerWidth < 500) return "mobile"
   }
-
 
 
   return (
     <div className="app">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category/:category" element={<Category/>} />
-        {/* <Route path="/products/:product" element={<Product />} /> */}
-      </Routes>
+      <ScreenSizeContext.Provider value={screenSize}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/category/:categoryName" element={<Category />} />
+          <Route path="/product/:productId" element={<ProductPage />} />
+        </Routes>
+        </ScreenSizeContext.Provider>
     </div>
   );
 }

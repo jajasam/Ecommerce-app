@@ -1,5 +1,7 @@
 import "../styles/Footer.css";
 
+import NavLinks from "./NavLinks"
+
 function Footer() {
     return (
         <footer>
@@ -12,21 +14,14 @@ function Footer() {
                 <p>Copyright 2021. All Rights Reserved</p>
                 </div>
                 <div className="footer-right">
-                <nav className="nav-bar">
-                    <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./html/headphones.html">Headphones</a></li>
-                    <li><a href="html/headphones.html">Speakers</a></li>
-                    <li><a href="html/earphones.html">Earphones</a></li>
-                    </ul>
-                </nav>
-                <nav className="social-medias-nav">
-                    <ul>
-                    <li><span className="img icon fb-icon"></span></li>
-                    <li><span className="img icon twitter-icon"></span></li>
-                    <li><span className="img icon ig-icon"></span></li>
-                    </ul>
-                </nav>
+                    <NavLinks />
+                    <nav className="social-medias-nav">
+                        <ul>
+                        <li><span className="img icon fb-icon"></span></li>
+                        <li><span className="img icon twitter-icon"></span></li>
+                        <li><span className="img icon ig-icon"></span></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>`
         </footer>
