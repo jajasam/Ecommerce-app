@@ -1,25 +1,20 @@
 import { Link } from "react-router-dom"
 
-import "../styles/Product.css";
+import "../styles/ProductOverview.css";
 import "../App.css"
+import { ScreenSizeContext } from "../App";
 
 function Product({productData, isOdd}) {
-    const {id, name, description, price} = productData
-
-// categoryImage: {mobile: './assets/product-yx1-earphones/mobile/image-category-page-preview.jpg', tablet: './assets/product-yx1-earphones/tablet/image-category-page-preview.jpg', desktop: './assets/product-yx1-earphones/desktop/image-category-page-preview.jpg'}
-
-// gallery: {first: {…}, second: {…}, third: {…}}
-// image: {mobile: './assets/product-yx1-earphones/mobile/image-product.jpg', tablet: './assets/product-yx1-earphones/tablet/image-product.jpg', desktop: './assets/product-yx1-earphones/desktop/image-product.jpg'}
-// includes: (5) [{…}, {…}, {…}, {…}, {…}]
-// new: true
-// others: (3) [{…}, {…}, {…}]
-// price: 599
-// slug: "yx1-earphones"
-
+    const {id, name, description, slug} = productData;
 
     return (
         <div className={`product ${isOdd ? 'reverse' : ''}`}>
-            <div className="img"></div>
+            <ScreenSizeContext.Consumer>
+                {screenSize => 
+                    ( 
+                        <img src={require(`../assets/product-${slug}/${screenSize}/image-category-page-preview.jpg`)} alt={name} className="img" />
+                    )}
+            </ScreenSizeContext.Consumer>
             <div className="product-infos">
                 <div>
                 {productData.new && <h4>New product</h4>}

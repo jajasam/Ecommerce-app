@@ -32,33 +32,3 @@ footer {
   flex-direction: column;
   gap: 50px;
 }
-
-.social-medias-nav {
-  margin-right: 0;
-  gap: 10px;
-  width: 300px;
-}
-
-.social-medias-nav ul {
-  width: 300px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.icon {
-  width: 2rem;
-  height: 2rem;
-}
-
-.fb-icon {
-  background-image: url("../assets/shared/desktop/icon-facebook.svg");
-}
-
-.twitter-icon {
-  background-image: url("../assets/shared/desktop/icon-twitter.svg");
-}
-
-.ig-icon {
-  background-image: url("../assets/shared/desktop/icon-instagram.svg");
-}

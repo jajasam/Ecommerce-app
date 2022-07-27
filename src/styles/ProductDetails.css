@@ -1,0 +1,93 @@
+.product_container {
+    margin: 100px auto;
+}
+
+.top, .bottom {
+    display: flex;
+    gap: 125px;
+}
+
+.top img {
+    width: 500px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+
+.top .new-product {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.top h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.top p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+}
+
+#quantity {
+    background: #F1F1F1;
+    border: none;
+    height: 50px;
+    width: 150px;
+    outline: none;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    gap: 200px;
+}
+
+.bottom h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.features {
+    width: 60%;
+}
+
+.in-the-box {
+    width: 30%;
+}
+
+.in-the-box ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.in-the-box li {
+    display: flex;
+}
+
+.in-the-box span:first-child {
+    width: 30px;
+
+}
+
+.bottom p {
+    font-size: 1rem;
+    line-height: 25px;
+}

@@ -6,7 +6,7 @@ function BestGear() {
     return (
         <div className="best-gear">
             <div className="business-purpose-text">
-            <h2>Bringing you the <span>best</span>audio gear</h2>
+            <h2>Bringing you the <span>best</span> audio gear</h2>
             <p>
               Bringing you the best audio gear
               Located at the heart of New York City, Audiophile is the premier store for high end headphones, 

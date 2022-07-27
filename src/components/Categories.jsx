@@ -9,21 +9,21 @@ function Categories() {
             <span className="img"></span>
             <div>
                 <h5>Headphones</h5>
-                <Link to="/category/headphones" state={{category: "headphones"}}>Shop</Link>
+                <Link to="/category/headphones" state={{category: "headphones"}} className="shop-link">Shop</Link>
             </div>
             </div>
             <div className="category" id="category_speakers">
             <span className="img"></span>
             <div>
                 <h5>Speakers</h5>
-                <Link to="/category/speakers" state={{category: "speakers"}}>Shop</Link>
+                <Link to="/category/speakers" state={{category: "speakers"}} className="shop-link">Shop</Link>
             </div>
             </div>
             <div className="category" id="category_earphones">
             <span className="img"></span>
             <div>
                 <h5>Earphones</h5>
-                <Link to="/category/earphones" state={{category: "earphones"}}>Shop</Link>
+                <Link to="/category/earphones" state={{category: "earphones"}} className="shop-link">Shop</Link>
             </div>
             </div>
         </div>

@@ -4,8 +4,6 @@ import { Link } from "react-router-dom"
 import Header from "./Header";
 
 function Hero() {
-
-    console.log()
     return (
         <div>
             <div className="hero img">

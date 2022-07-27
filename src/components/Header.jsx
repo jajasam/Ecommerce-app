@@ -1,5 +1,5 @@
 import "../styles/Header.css";
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import NavLinks from "./NavLinks"
 
@@ -14,7 +14,7 @@ function Header({isOnHero, displayCategory}) {
                 <div className="nav-bar">
                     <div className="logo img"></div>
                     <NavLinks />
-                    <div className="cart-icon img"></div>
+                    <Link to="/cart" className="cart-icon img"></Link>
                 </div>
             </div>
             <div className="cart"></div>

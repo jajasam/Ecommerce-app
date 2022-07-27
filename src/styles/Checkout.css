@@ -1,0 +1,42 @@
+.checkout-container {
+    min-width: 50%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 50px;
+}
+
+.checkout-container h5 {
+    color: #D87D4A;
+    text-transform: uppercase;
+}
+
+.checkout-container div > *:nth-child(2n) {
+    margin-bottom: 20px;
+}
+
+.checkout-container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-container h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1.15px;
+}
+
+.checkout-container label {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.checkout-container input {
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    max-width: 200px;
+    height: 25px;
+    width: 250px;
+    outline: none;
+}

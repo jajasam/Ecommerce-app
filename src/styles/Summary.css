@@ -1,0 +1,56 @@
+.summary-container {
+    background-color: white;
+    padding: 25px;
+    width: 40%;
+}
+
+.summary-container h3 {
+    text-transform: uppercase;
+}
+
+.summary-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+
+.summary-container li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.summary-container li div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.summary-container p {
+    margin: 0;
+}
+
+.summary-container li div p:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.remove-item-btn {
+    border: none;
+    text-decoration: underline;
+    font-size: small;
+    color: grey;
+    cursor: pointer;
+    min-width: 100px;
+    padding: 10px;
+    background: none;
+}
+
+.summary-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}

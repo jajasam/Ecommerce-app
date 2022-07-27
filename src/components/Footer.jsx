@@ -15,13 +15,6 @@ function Footer() {
                 </div>
                 <div className="footer-right">
                     <NavLinks />
-                    <nav className="social-medias-nav">
-                        <ul>
-                        <li><span className="img icon fb-icon"></span></li>
-                        <li><span className="img icon twitter-icon"></span></li>
-                        <li><span className="img icon ig-icon"></span></li>
-                        </ul>
-                    </nav>
                 </div>
             </div>`
         </footer>
