@@ -1,5 +1,5 @@
 .header-bg {
-  width: 100vw;
+  width: 100vw !important;
   background-color: rgb(0, 0, 0);
 }
 

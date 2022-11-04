@@ -16,19 +16,30 @@ function Category() {
     const location = useLocation();
     const category = location.state.category;
 
-    const [products, setProducts] = useState();
-
-    console.log(data)
+    const [filteredProducts, setFilteredProducts] = useState();
 
     useEffect(() => {
-        setProducts(data.filter(elem => elem.category === category))
+        const products = data.filter(elem => elem.category === category);
+        let newProducts = [];
+        let oldProducts = [];
+
+        //filter array to make new products appear first
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].new) {
+                newProducts.push(products[i]);
+            } else {
+                oldProducts.push(products[i]);
+            }
+        }
+        setFilteredProducts(newProducts.concat(oldProducts));
     }, [location])
 
+ 
     return (
         <div className="content">
             <Header displayCategory={true} />
             <div className="products_container">
-                {products && products.map((product, i) => <ProductOverview productData={product} key={i} isOdd={i % 2 != 0 ? true : false} />)}
+                {filteredProducts && filteredProducts.map((product, i) => <ProductOverview productData={product} key={i} isOdd={i % 2 !== 0 ? true : false} />)}
             </div>
             <Categories />
             <BestGear />

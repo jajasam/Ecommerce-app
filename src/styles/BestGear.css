@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.business-purpose h2 {
+.business-purpose-text h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
@@ -21,9 +21,8 @@
     max-width: 400px;
 }
 
-.business-purpose h2 span {
+.business-purpose-text h2 span {
     color: var(--orange1);
-    padding-right: 10px;
 }
 
 .best-gear-img {

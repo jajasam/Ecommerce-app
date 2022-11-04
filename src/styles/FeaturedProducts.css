@@ -95,3 +95,7 @@
     text-transform: uppercase;
     font-size: 28px;
 }
+
+.product-infos h3 {
+  text-transform: uppercase;
+}

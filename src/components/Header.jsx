@@ -17,7 +17,6 @@ function Header({isOnHero, displayCategory}) {
                     <Link to="/cart" className="cart-icon img"></Link>
                 </div>
             </div>
-            <div className="cart"></div>
             {displayCategory &&
                 <div className="category-name">
                     {category && <h1>{category}</h1>}

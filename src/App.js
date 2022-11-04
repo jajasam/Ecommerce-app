@@ -47,7 +47,7 @@ function App() {
     <div className="app">
       <ScreenSizeContext.Provider value={screenSize}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" exact element={<Home />} />
             <Route path="/category/:categoryName" element={<Category />} />
             <Route path="/product/:productId" element={<ProductPage addToCart={addToCart} />} />
             <Route path="/cart" element={<Cart cart={cart} total={total} removeFromCart={removeFromCart} />} />
