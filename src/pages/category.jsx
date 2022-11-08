@@ -36,7 +36,7 @@ function Category() {
 
  
     return (
-        <div className="content">
+        <>
             <Header displayCategory={true} />
             <div className="products_container">
                 {filteredProducts && filteredProducts.map((product, i) => <ProductOverview productData={product} key={i} isOdd={i % 2 !== 0 ? true : false} />)}
@@ -44,7 +44,7 @@ function Category() {
             <Categories />
             <BestGear />
             <Footer />
-        </div>
+        </>
     )
 }
 

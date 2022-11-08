@@ -5,12 +5,12 @@
   flex-direction: row;
   align-items: center;
   min-height: 500px;
-  /* width: 1100px; */
   border-radius: 8px;
   justify-content: center;
   padding: 6rem;
   gap: 100px;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 #ZX9-speaker_img {
@@ -40,7 +40,6 @@
   background-color: black;
   border: none;
   color: white;
-  /* letter-spacing: 1px; */
 }
 
 #ZX9-speaker button:hover {
@@ -50,11 +49,11 @@
 #ZX7-speaker {
     background-image: url("../assets/home/desktop/image-speaker-zx7.jpg");
     min-height: 320px;
-    width: 1100px;
     display: flex;
     align-items: center;
     border-radius: 8px;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 #ZX7-speaker div {
@@ -74,21 +73,23 @@
 }
 
 #YX1-earphones_img {
-    width: 540px; 
+    width: 50%;
+    max-width: 540px; 
     border-radius: 8px;
 }
 
 #YX1-earphones .product-infos {
     background-color: #f2f2f2;
     border-radius: 8px;
-    width: 540px;
+    width: 50%;
+    max-width: 540px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .product-infos div {
-    margin-left: 100px;
+    margin-left: 2rem;
 }
 
 #YX1-earphones h3 {
@@ -98,4 +99,23 @@
 
 .product-infos h3 {
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  #ZX9-speaker {
+    flex-direction: column !important;
+  }
+  #ZX9-speaker_img {
+    width: 200px;
+    height: 300px;
+  }
+  #YX1-earphones {
+    flex-direction: column;
+  }
+  #YX1-earphones_img {
+    width: 100%;
+  }
+  #YX1-earphones .product-infos {
+    width: 100%;
+  }
 }

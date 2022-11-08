@@ -1,4 +1,4 @@
-div.nav-bar {
+div.nav-links {
     padding-top: 1rem;
     align-items: center;
 }
@@ -9,7 +9,7 @@ width: 160px;
 height: 25px;
 }
 
-.nav-bar ul {
+.nav-links ul {
 list-style: none;
 display: flex;
 justify-content: space-between;
@@ -21,7 +21,20 @@ cursor: pointer;
 letter-spacing: 2px;
 }
 
-.nav-bar a {
+.nav-links a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--orange1);
+}
+
+.nav-links a.current::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    display: flex;
 }

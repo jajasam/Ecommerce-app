@@ -7,14 +7,14 @@ import Footer from "../components/Footer";
 
 function cart({cart, total, removeFromCart}) {
     return (
-        <div className="content">
+        <>
             <Header />
             <div className="cart-content">
                 <Checkout />
                 <Summary cart={cart} total={total} removeFromCart={removeFromCart} />
             </div>
             <Footer />
-        </div>
+        </>
     )
 }
 

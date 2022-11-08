@@ -4,7 +4,7 @@ import "../styles/NavLinks.css"
 
 function NavLinks() {
     return (
-    <div className="nav-bar">
+    <div className="nav-links">
         <ul>
             <li>
                 <Link to="/" className="nav-link">Home</Link>

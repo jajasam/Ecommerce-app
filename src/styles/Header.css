@@ -13,6 +13,8 @@
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  align-items:center;
+  padding-top: 32px;
 }
 
 .cart-icon {
@@ -50,4 +52,10 @@
 
 .cart-icon:hover .cart {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  header .nav-links {
+    display: none;
+  }
 }

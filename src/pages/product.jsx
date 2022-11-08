@@ -18,7 +18,7 @@ function ProductPage({addToCart}) {
     const productData = data.find(product => product.id === productId)
 
     return (
-        <div className="content">
+        <>
             <Header />
             <ProductDetails key={productData.id} productData={productData} addToCart={addToCart} />
             <Gallery productData={productData} />
@@ -26,7 +26,7 @@ function ProductPage({addToCart}) {
             <BestGear />
             <Footer />
 
-        </div>
+        </>
     )
 }
 
