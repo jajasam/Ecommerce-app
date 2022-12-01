@@ -4,20 +4,22 @@ import { Link, useLocation } from 'react-router-dom';
 import NavLinks from "./NavLinks"
 
 
-function Header({isOnHero, displayCategory}) {
+function Header({ isOnHero, displayCategory }) {
     const location = useLocation();
     const category = location?.state?.category;
 
     return (
         <header className={isOnHero ? '' : 'header-bg'}>
-            <div className="header-content">
-                <div className="nav-bar">
+            <div className="content">
+                <div>
+                    <div className="hamburger-icon"></div>
                     <div className="logo img"></div>
-                    <NavLinks />
-                    <Link to="/cart" className="cart-icon img"></Link>
                 </div>
+                <NavLinks />
+                <Link to="/cart" className="cart-icon img"></Link>
             </div>
-            {displayCategory &&
+            {
+                displayCategory &&
                 <div className="category-name">
                     {category && <h1>{category}</h1>}
                 </div>

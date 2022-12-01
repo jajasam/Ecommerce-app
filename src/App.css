@@ -19,19 +19,81 @@
 
 body {
   margin: 0;
-}
-
-#root {
   background-color: #fafafa;
-  margin: 0 3%;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
 }
 
-.app {
-  font-family: "Manrope", sans-serif;
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+.subtitle {
+  text-transform: uppercase;
+  fon-weight: 700;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+.overline {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 19px;
+  letter-spacing: 10px;
+  color: var(--orange1);
+}
+
+.subtitle {
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: var(--orange1);
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 .img {
@@ -72,6 +134,14 @@ a {
   color: black;
 }
 
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
 /* 
 ***************************************
         MAIN
@@ -102,7 +172,7 @@ a {
   justify-content: center;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 1111px) {
   .cart-content {
       flex-direction: column;
   }

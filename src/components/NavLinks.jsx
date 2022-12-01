@@ -4,7 +4,7 @@ import "../styles/NavLinks.css"
 
 function NavLinks() {
     return (
-    <div className="nav-links">
+    <nav className="nav-links">
         <ul>
             <li>
                 <Link to="/" className="nav-link">Home</Link>
@@ -19,7 +19,7 @@ function NavLinks() {
                 <Link to={"/category/earphones"} state={{category: "earphones"}} className="nav-link">Earphones</Link>
             </li>
         </ul>
-    </div>
+    </nav>
     )
 }
 

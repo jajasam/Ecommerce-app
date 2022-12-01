@@ -17,10 +17,15 @@ function Product({productData, isOdd}) {
             </ScreenSizeContext.Consumer>
             <div className="product-infos">
                 <div>
-                {productData.new && <h4>New product</h4>}
-                <h3>{name}</h3>
-                <p>{description}</p>
-                <Link to={`/product/${id}`} state={{productId: id}}><button className="btn primary-btn">See product</button></Link>
+                {
+                    productData.new && 
+                    <p className="overline">New product</p>
+                }
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                    <Link to={`/product/${id}`} state={{productId: id}}>
+                        <button className="btn primary-btn">See product</button>
+                    </Link>
                 </div>
             </div>
         </div>

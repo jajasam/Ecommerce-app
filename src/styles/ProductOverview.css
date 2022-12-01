@@ -20,13 +20,6 @@
     height: 100%;
 }
 
-.product h4 {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    opacity: 0.5;
-    font-size: 14px;
-}
-
 @media screen and (max-width: 1000px) {
     .products {
         display: flex; 

@@ -39,7 +39,7 @@
     max-width: 500px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1111px) {
     .best-gear {
         display: flex;
         flex-direction: column-reverse;

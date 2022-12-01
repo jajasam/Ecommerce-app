@@ -30,12 +30,6 @@
     text-transform: uppercase;
 }
 
-.product_container .top p {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-}
-
 .product_container .price {
     font-weight: 700;
     font-size: 18px;
@@ -84,10 +78,4 @@
 
 .in-the-box span:first-child {
     width: 30px;
-
-}
-
-.product_container .bottom p {
-    font-size: 1rem;
-    line-height: 25px;
 }

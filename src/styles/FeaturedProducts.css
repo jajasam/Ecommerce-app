@@ -101,7 +101,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1111px) {
   #ZX9-speaker {
     flex-direction: column !important;
   }

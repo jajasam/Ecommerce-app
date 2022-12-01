@@ -1,20 +1,42 @@
 .header-bg {
-  width: 100vw !important;
-  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  background-color: #000;
 }
 
-.header-content {
+header .content {
   max-width: 1100px;
+  width: 100%;
   margin: auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 30px;
-}
-
-.nav-bar {
+  height: 90px;
   display: flex;
   justify-content: space-between;
-  align-items:center;
-  padding-top: 32px;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.logo {
+  width: 143px;
+}
+
+.hamburger-icon {
+  background-image: url('../assets/shared/tablet/icon-hamburger.svg');
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 28px;
+}
+
+nav ul {
+  height: 28px;
 }
 
 .cart-icon {
@@ -22,6 +44,7 @@
   width: 24px;
   height: 20px;
   cursor: pointer;
+  margin-left: 119px;
 }
 
 .category-name {
@@ -54,8 +77,32 @@
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1111px) {
   header .nav-links {
     display: none;
+  }
+
+  header .content div:first-child {
+    display: flex;
+    gap: 42px;
+    align-items: center;
+  }
+
+  .hamburger-icon {
+    display: block;
+    margin-right: 0;
+  }
+
+  .cart-icon {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 375px) { 
+  header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

@@ -20,10 +20,13 @@ function ProductDetails({productData, addToCart}) {
                     )}
                 </ScreenSizeContext.Consumer>
                 <div>
-                    {productData.new && <h4 className="new-product">New product</h4>}
+                    {
+                        productData.new && 
+                        <h4 className="new-product">New product</h4>
+                    }
                     <h3>{name}</h3>
                     <p>{description}</p>
-                    <p className="price">$ {price}</p>
+                    <h6 className="price">$ {price}</h6>
                     <div>
                         <input type="number" name="quantity" id="quantity" min="1" onChange={updateQuantity} defaultValue="1" />
                         <Link to="/cart">
