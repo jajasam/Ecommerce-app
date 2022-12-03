@@ -8,7 +8,7 @@ header .content {
   width: 100%;
   margin: auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  height: 96px;
+  min-height: 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@ header .content {
 .hamburger-icon {
   background-image: url('../assets/shared/tablet/icon-hamburger.svg');
   width: 16px;
-  height: 16px;
+  min-height: 16px;
   margin-right: 8px;
   display: none;
 }
@@ -31,23 +31,23 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 28px;
+  min-height: 28px;
 }
 
 nav ul {
-  height: 28px;
+  min-height: 28px;
 }
 
 .cart-icon {
   background-image: url("../assets/shared/desktop/icon-cart.svg");
   width: 24px;
-  height: 20px;
+  min-height: 20px;
   cursor: pointer;
   margin-left: 119px;
 }
 
 .category-name {
-  height: 200px;
+  min-height: 200px;
   background-color: rgb(0, 0, 0);
   color: white;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ nav ul {
 
 .cart {
   background-color: red;
-  height: 300px;
+  min-height: 300px;
   width: 300px;
   position: absolute;
   margin-top: 20px;

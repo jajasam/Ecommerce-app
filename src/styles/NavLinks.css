@@ -4,20 +4,20 @@ div.nav-links {
 }
 
 .logo {
-background-image: url("../assets/shared/desktop/logo.svg");
-width: 160px;
-height: 25px;
+    background-image: url("../assets/shared/desktop/logo.svg");
+    width: 160px;
+    min-height: 25px;
 }
 
 .nav-links ul {
-list-style: none;
-display: flex;
-justify-content: space-between;
-gap: 25px;
-text-transform: uppercase;
-padding-left: 0;
-cursor: pointer;
-letter-spacing: 2px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    text-transform: uppercase;
+    padding-left: 0;
+    cursor: pointer;
+    letter-spacing: 2px;
 }
 
 .nav-links a {
@@ -34,7 +34,7 @@ letter-spacing: 2px;
 .nav-links a.current::after {
     content: "";
     width: 30px;
-    height: 2px;
+    min-height: 2px;
     background-color: white;
     display: flex;
 }

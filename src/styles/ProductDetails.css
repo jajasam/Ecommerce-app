@@ -39,7 +39,7 @@
 #quantity {
     background: #F1F1F1;
     border: none;
-    height: 50px;
+    min-height: 50px;
     width: 150px;
     outline: none;
     text-align: center;

@@ -35,6 +35,6 @@
     background: #FFFFFF;
     border: 1px solid #CFCFCF;
     border-radius: 8px;
-    height: 25px;
+    min-height: 25px;
     outline: none;
 }
