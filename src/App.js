@@ -7,6 +7,8 @@ import Category from "./pages/category";
 import ProductPage from "./pages/product";
 import Cart from "./pages/cart";
 
+import Footer from "./components/Footer";
+
 export const ScreenSizeContext = createContext()
 
 function App() {
@@ -53,6 +55,8 @@ function App() {
             <Route path="/cart" element={<Cart cart={cart} total={total} removeFromCart={removeFromCart} />} />
           </Routes>
         </ScreenSizeContext.Provider>
+        <Footer />
+
     </div>
   );
 }

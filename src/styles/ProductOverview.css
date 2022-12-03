@@ -20,7 +20,7 @@
     height: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1111px) {
     .products {
         display: flex; 
         flex-direction: column;

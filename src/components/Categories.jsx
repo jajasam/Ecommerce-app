@@ -3,29 +3,30 @@ import { Link } from "react-router-dom"
 import "../styles/Categories.css"
 
 function Categories() {
+    const categories = ['Headphones', 'Speakers', 'Earphones']
+    const categoriesElems = categories.map((category, i) => (
+        <div className="category" key={i}>
+            <img 
+                className="img"
+                src={
+                    require(`../assets/shared/desktop/image-category-thumbnail-${category.toLowerCase()}.png`)
+                }
+                alt={category}
+            />
+            <h6>{category}</h6>
+            <Link
+                to={`/category/${category.toLowerCase()}`} 
+                state={{category: `${category.toLowerCase()}`}}
+                className="shop-link">
+                Shop
+            </Link>
+        </div>
+    ))
     return (
-        <div className="categories">
-            <div className="category" id="category_headphones">
-            <span className="img"></span>
-            <div>
-                <h5>Headphones</h5>
-                <Link to="/category/headphones" state={{category: "headphones"}} className="shop-link">Shop</Link>
-            </div>
-            </div>
-            <div className="category" id="category_speakers">
-            <span className="img"></span>
-            <div>
-                <h5>Speakers</h5>
-                <Link to="/category/speakers" state={{category: "speakers"}} className="shop-link">Shop</Link>
-            </div>
-            </div>
-            <div className="category" id="category_earphones">
-            <span className="img"></span>
-            <div>
-                <h5>Earphones</h5>
-                <Link to="/category/earphones" state={{category: "earphones"}} className="shop-link">Shop</Link>
-            </div>
-            </div>
+        <div className="categories container">
+            {
+                categoriesElems && categoriesElems
+            }
         </div>
     )
 }

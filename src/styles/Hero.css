@@ -7,7 +7,7 @@
     width: 100vw;
     color: var(--white0);
     height: 100vh;
-    min-height: 700px;
+    min-height: 750px;
 }
 
 .hero-info {
@@ -43,14 +43,13 @@
 @media (max-width: 1111px) {
     .hero-img {
         background-image: url("../assets/home/tablet/image-header.jpg");
-        max-height: 730px;
     }
 
     .hero-info {
         text-align: center;
     }
     .hero-info div {
-        margin: 90px auto;
+        margin: 130px auto;
     }
 
     .hero p {
@@ -59,7 +58,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
     .hero-img {
         background-image: url("../assets/home/mobile/image-header.jpg");
         max-height: 600px;

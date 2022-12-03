@@ -8,11 +8,10 @@ header .content {
   width: 100%;
   margin: auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  height: 90px;
+  height: 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
   position: relative;
 }
 
@@ -82,6 +81,10 @@ nav ul {
     display: none;
   }
 
+  header .content {
+    padding: 0 1.5rem;
+  }
+
   header .content div:first-child {
     display: flex;
     gap: 42px;
@@ -98,7 +101,7 @@ nav ul {
   }
 }
 
-@media screen and (max-width: 375px) { 
+@media (max-width: 480px) {
   header .logo {
     position: absolute;
     top: 50%;
