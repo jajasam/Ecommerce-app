@@ -8,9 +8,9 @@ function FeaturedProducts() {
     return (
         <ScreenSizeContext.Consumer>
             {screenSize => (
-                <div className="products">
+                <section className="products container">
                     <div id="ZX9-speaker">
-                        <img className="img" id="ZX9-speaker_img" src={require(`../assets/home/${screenSize}/image-speaker-zx9.png`)} alt="ZX9 speaker" />
+                        <img className="img" src={require(`../assets/home/${screenSize}/image-speaker-zx9.png`)} alt="ZX9 speaker" />
                         <div>
                             <h2>ZX9 speaker</h2>
                             <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
@@ -30,17 +30,15 @@ function FeaturedProducts() {
                         </div>
                     </div>
                     <div id="YX1-earphones">
-                        <img className="img" id="YX1-earphones_img" src={require(`../assets/home/${screenSize}/image-earphones-yx1.jpg`)} alt="YX1 earphones" />
-                        <div className="product-infos">
-                            <div>
+                        <img className="img" src={require(`../assets/home/${screenSize}/image-earphones-yx1.jpg`)} alt="YX1 earphones" />
+                        <div>
                             <h3>YX1 earphones</h3>
                             <Link to="/product/1" state={{productId: 1}}>
                                 <button className="btn secondary-btn">See product</button>
                             </Link>
                         </div>
-                    </div>
                 </div>
-            </div>
+            </section>
             )}
         </ScreenSizeContext.Consumer>
     )

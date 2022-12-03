@@ -23,11 +23,11 @@ function Categories() {
         </div>
     ))
     return (
-        <div className="categories container">
+        <section className="categories container">
             {
                 categoriesElems && categoriesElems
             }
-        </div>
+        </section>
     )
 }
 
