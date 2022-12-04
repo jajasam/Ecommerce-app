@@ -4,7 +4,7 @@ import { ScreenSizeContext } from "../App"
 
 function BestGear() {
     return (
-        <div className="best-gear">
+        <section className="best-gear container">
             <div className="business-purpose-text">
             <h2>Bringing you the <span>best</span> audio gear</h2>
             <p>
@@ -20,7 +20,7 @@ function BestGear() {
                 <img className="img best-gear-img" src={require(`../assets/shared/${screenSize}/image-best-gear.jpg`)} alt="Best gear" />
             )}
         </ScreenSizeContext.Consumer>
-        </div>
+        </section>
     )
 }
 

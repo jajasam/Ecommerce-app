@@ -13,7 +13,9 @@ function Header({ isOnHero, displayCategory }) {
             <div className="content">
                 <div>
                     <div className="hamburger-icon"></div>
-                    <div className="logo img"></div>
+                    <Link to="/">
+                        <div className="logo img"></div>
+                    </Link>
                 </div>
                 <NavLinks />
                 <Link to="/cart" className="cart-icon img"></Link>

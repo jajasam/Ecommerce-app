@@ -1,9 +1,6 @@
 footer {
   background-color: #101010;
   color: white;
-  min-height: 365px;
-  margin-bottom: 0;
-  padding-top: 75px;
   width: 100vw;
 }
 
@@ -12,52 +9,77 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 100px;
   margin: auto;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.footer-content::before {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: var(--orange1);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 footer .top {
   display: flex;
-  flex-direction: row !important;
   justify-content: space-between;
+  margin-bottom: 36px;
   align-items: center;
-  gap: 30px;
 }
 
 footer .bottom {
   opacity: 0.5;
-  font-size: 15px;
-  line-height: 25px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 56px;
 }
 
 footer .bottom p {
   max-width: 540px;
 }
 
-@media (max-width: 480px) {
-  .footer-content {
-    gap: 30px;
-  }
-
-  footer .top {
-    flex-direction: column;
-    align-items: normal !important;
-    gap: 30px !important;
-  }
+footer .copyright {
+  opacity: 0.5;
 }
 
+footer .socials {
+  display: flex;
+  gap: 1rem;
+}
 
-@media (max-width: 480px) {
-  footer .top {
-    flex-direction: column !important;
-  }
+footer .socials svg {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+footer .socials svg:hover path {
+  fill: var(--orange1);
 }
 
 @media (max-width: 1111px) {
   .footer-content {
     margin: 0 3%;
+  }
+
+  footer .top {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  footer .bottom p {
+    max-width: 100%;
+  }
+
+  footer .socials {
+    position: absolute;
+    bottom: 46px;
+    right: 40px;
   }
 }
 
@@ -66,7 +88,42 @@ footer .bottom p {
     gap: 20px;
     text-align: center;
   }
+
+  .footer-content::before {
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  footer .top {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+
+  footer .bottom p {
+    margin-bottom: 4rem;
+  }
+
   footer .nav-links ul {
     flex-direction: column;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 110px;
+    left: 0 ;
+    right: 0;
+    margin: auto;
+  }
+
+  footer .socials {
+    left: 0 ;
+    right: 0;
+    bottom: 38px;
+    margin: auto;
+    justify-content: center;
   }
 }
