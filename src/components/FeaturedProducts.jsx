@@ -8,7 +8,7 @@ function FeaturedProducts() {
     return (
         <ScreenSizeContext.Consumer>
             {screenSize => (
-                <section className="products container">
+                <section className="featured-products container">
                     <div id="ZX9-speaker">
                         <img className="img" src={require(`../assets/home/${screenSize}/image-speaker-zx9.png`)} alt="ZX9 speaker" />
                         <div>

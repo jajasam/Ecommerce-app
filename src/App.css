@@ -136,6 +136,13 @@ p {
   color: black;
 }
 
+
+.container {
+  max-width: 1111px;
+  margin: auto;
+}
+
+
 @media (max-width: 1400px) {
   .container {
     padding: 0 1.5rem;
@@ -161,15 +168,6 @@ p {
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-}
-
-.products_container {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  margin-top: 150px;
-  margin-bottom: 250px;
-  max-width: 1100px;
 }
 
 .cart-content {

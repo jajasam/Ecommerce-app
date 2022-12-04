@@ -38,12 +38,15 @@ function Category() {
     return (
         <>
             <Header displayCategory={true} />
-            <div className="products_container">
-                {filteredProducts && filteredProducts.map((product, i) => <ProductOverview productData={product} key={i} isOdd={i % 2 !== 0 ? true : false} />)}
+            <div className="products container">
+                {
+                    filteredProducts && 
+                    filteredProducts.map((product, i) => 
+                    <ProductOverview productData={product} key={i} isOdd={i % 2 !== 0 ? true : false} />)
+                }
             </div>
             <Categories />
             <BestGear />
-            <Footer />
         </>
     )
 }

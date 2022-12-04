@@ -12,21 +12,21 @@ function Product({productData, isOdd}) {
             <ScreenSizeContext.Consumer>
                 {screenSize => 
                     ( 
-                        <img src={require(`../assets/product-${slug}/${screenSize}/image-category-page-preview.jpg`)} alt={name} className="img" />
+                        <img 
+                        src={require(`../assets/product-${slug}/${screenSize}/image-category-page-preview.jpg`)} 
+                        alt={name} />
                     )}
             </ScreenSizeContext.Consumer>
             <div className="product-infos">
-                <div>
                 {
                     productData.new && 
                     <p className="overline">New product</p>
                 }
-                    <h3>{name}</h3>
-                    <p>{description}</p>
-                    <Link to={`/product/${id}`} state={{productId: id}}>
-                        <button className="btn primary-btn">See product</button>
-                    </Link>
-                </div>
+                <h3>{name}</h3>
+                <p>{description}</p>
+                <Link to={`/product/${id}`} state={{productId: id}}>
+                    <button className="btn primary-btn">See product</button>
+                </Link>
             </div>
         </div>
     )

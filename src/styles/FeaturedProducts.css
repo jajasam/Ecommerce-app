@@ -1,3 +1,7 @@
+.featured-products {
+  width: 100%;
+}
+
 #ZX9-speaker {
   background-color: var(--orange1);
   color: var(--white0);

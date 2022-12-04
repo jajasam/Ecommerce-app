@@ -20,8 +20,12 @@ function ProductPage({addToCart}) {
     return (
         <>
             <Header />
-            <ProductDetails key={productData.id} productData={productData} addToCart={addToCart} />
-            <Gallery productData={productData} />
+            <ProductDetails 
+                key={productData.id} 
+                productData={productData} 
+                addToCart={addToCart} />
+            <Gallery 
+                productData={productData} />
             <Categories />
             <BestGear />
             <Footer />
