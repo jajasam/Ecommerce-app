@@ -136,14 +136,13 @@ p {
   color: black;
 }
 
-
 .container {
   max-width: 1111px;
   margin: auto;
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: 100px) {
   .container {
     padding: 0 1.5rem;
   }
