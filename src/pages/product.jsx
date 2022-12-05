@@ -5,6 +5,7 @@ import "../App.css"
 import Header from "../components/Header"
 import ProductDetails from "../components/ProductDetails"
 import Gallery from "../components/Gallery"
+import YouMayAlsoLike from "../components/YouMayAlsoLike"
 import Categories from "../components/Categories"
 import BestGear from "../components/BestGear"
 import Footer from "../components/Footer"
@@ -21,11 +22,15 @@ function ProductPage({updateCart}) {
         <>
             <Header />
             <ProductDetails 
-                key={productData.id} 
-                productData={productData} 
-                updateCart={updateCart} />
+             key={productData.id} 
+             productData={productData} 
+             updateCart={updateCart} />
             <Gallery 
-                productData={productData} />
+             productData={productData} />
+            <YouMayAlsoLike 
+             products={productData.others}  
+             data={data}
+            />
             <Categories />
             <BestGear />
             <Footer />

@@ -1,0 +1,25 @@
+.other-products {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.other-products div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.other-products img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .other-products {
+        flex-direction: column;
+    }
+}
