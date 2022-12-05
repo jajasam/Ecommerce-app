@@ -22,7 +22,7 @@ function ProductDetails({productData, updateCart}) {
                 <div>
                     {
                         productData.new && 
-                        <h4 className="new-product">New product</h4>
+                        <p className="overline">New product</p>
                     }
                     <h3>{name}</h3>
                     <p>{description}</p>

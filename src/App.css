@@ -142,7 +142,7 @@ p {
 }
 
 
-@media (max-width: 100px) {
+@media (max-width: 1111px) {
   .container {
     padding: 0 1.5rem;
   }
