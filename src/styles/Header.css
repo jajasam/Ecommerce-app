@@ -25,6 +25,7 @@ header .content {
   min-height: 16px;
   margin-right: 8px;
   display: none;
+  cursor: pointer;
 }
 
 header nav {
@@ -85,7 +86,7 @@ nav ul {
     padding: 0 1.5rem;
   }
 
-  header .content div:first-child {
+  header .content div:first-child:not(.category) {
     display: flex;
     gap: 42px;
     align-items: center;
