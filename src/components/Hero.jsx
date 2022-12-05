@@ -6,7 +6,7 @@ import Header from "./Header";
 function Hero() {
     return (
         <div className="hero">
-            <div className="hero-img img">
+            <div className="hero-img">
                 <Header isOnHero={true} />
                 <div className="hero-info">
                     <div>

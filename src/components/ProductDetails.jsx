@@ -1,6 +1,5 @@
 import "../styles/ProductDetails.css"
 import { useState } from "react"
-import { Link } from "react-router-dom"
 import { ScreenSizeContext } from "../App.js"
 
 function ProductDetails({productData, updateCart}) {
@@ -16,7 +15,7 @@ function ProductDetails({productData, updateCart}) {
             <div className="top">
                 <ScreenSizeContext.Consumer>
                     {screenSize => (
-                        <img src={require(`../assets/product-${slug}/${screenSize}/image-product.jpg`)} alt={name} className="img" />
+                        <img src={require(`../assets/product-${slug}/${screenSize}/image-product.jpg`)} alt={name} />
                     )}
                 </ScreenSizeContext.Consumer>
                 <div>
@@ -29,9 +28,7 @@ function ProductDetails({productData, updateCart}) {
                     <h6 className="price">$ {price}</h6>
                     <div>
                         <input type="number" name="quantity" id="quantity" min="1" onChange={updateQuantity} defaultValue="1" />
-                        <Link to="/cart">
-                            <button className="btn primary-btn" onClick={() => updateCart(productData, quantity)}>Add to cart</button>
-                        </Link>
+                        <button className="btn primary-btn" onClick={() => updateCart(productData, quantity)}>Add to cart</button>
                     </div>
                 </div>
             </div>

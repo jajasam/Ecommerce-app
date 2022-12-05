@@ -10,7 +10,7 @@ function FeaturedProducts() {
             {screenSize => (
                 <section className="featured-products container">
                     <div id="ZX9-speaker">
-                        <img className="img" src={require(`../assets/home/${screenSize}/image-speaker-zx9.png`)} alt="ZX9 speaker" />
+                        <img src={require(`../assets/home/${screenSize}/image-speaker-zx9.png`)} alt="ZX9 speaker" />
                         <div>
                             <h2>ZX9 speaker</h2>
                             <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
@@ -30,7 +30,7 @@ function FeaturedProducts() {
                         </div>
                     </div>
                     <div id="YX1-earphones">
-                        <img className="img" src={require(`../assets/home/${screenSize}/image-earphones-yx1.jpg`)} alt="YX1 earphones" />
+                        <img src={require(`../assets/home/${screenSize}/image-earphones-yx1.jpg`)} alt="YX1 earphones" />
                         <div>
                             <h3>YX1 earphones</h3>
                             <Link to="/product/1" state={{productId: 1}}>

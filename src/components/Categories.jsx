@@ -7,11 +7,9 @@ function Categories() {
     const categoriesElems = categories.map((category, i) => (
         <div className="category" key={i}>
             <img 
-                className="img"
-                src={
-                    require(`../assets/shared/desktop/image-category-thumbnail-${category.toLowerCase()}.png`)
-                }
-                alt={category}
+             src={
+                require(`../assets/shared/desktop/image-category-thumbnail-${category.toLowerCase()}.png`)}
+             alt={category}
             />
             <h6>{category}</h6>
             <Link

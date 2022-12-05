@@ -16,6 +16,9 @@ function App() {
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0) 
 
+  window.cart = cart;
+  window.total = total;
+
   window.addEventListener("resize", function() {
     setScreenSize(screenSizeName(window.innerWidth))
   })

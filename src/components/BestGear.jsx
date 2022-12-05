@@ -17,7 +17,7 @@ function BestGear() {
         </div>
         <ScreenSizeContext.Consumer> 
             {screenSize => (
-                <img className="img best-gear-img" src={require(`../assets/shared/${screenSize}/image-best-gear.jpg`)} alt="Best gear" />
+                <img className="best-gear-img" src={require(`../assets/shared/${screenSize}/image-best-gear.jpg`)} alt="Best gear" />
             )}
         </ScreenSizeContext.Consumer>
         </section>

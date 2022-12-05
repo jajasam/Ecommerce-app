@@ -1,0 +1,44 @@
+.cart-modal {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 96px;
+    background-color: white;
+    padding: 30px;
+    max-width: 488px;
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.cart-modal div:first-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cart-modal ul {
+    list-style: none;
+}
+
+.cart-modal ul li {
+    display: flex;
+}
+/* 
+.cart-modal ul li div > div{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.cart-modal ul img {
+    width: 64px;
+    height: 64px;
+    object-cover: fit;
+}
+
+@media screen and (max-width: 480px) {
+    .cart-modal {
+        margin: 1.5rem;
+    }
+}

@@ -14,7 +14,9 @@ function Summary({cart, total, removeFromCart}) {
                             <li 
                              key={i} 
                              className="product-summary">
-                                <img src={require(`../assets/product-${item.productData.slug}/${screenSize}/image-category-page-preview.jpg`)} alt={item.productData.name} className="img" />
+                                <img 
+                                 src={require(`../assets/cart/image-${item.productData.slug}.jpg`)} 
+                                 alt={item.productData.name} />
                                 <div>
                                     <div>
                                         <p>{item.productData.name}</p>

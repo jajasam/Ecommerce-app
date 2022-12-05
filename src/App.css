@@ -97,12 +97,6 @@ p {
   margin: 0;
 }
 
-.img {
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;
-}
-
 .btn {
   text-transform: uppercase;
   font-weight: 700;
