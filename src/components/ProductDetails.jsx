@@ -3,7 +3,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { ScreenSizeContext } from "../App.js"
 
-function ProductDetails({productData, addToCart}) {
+function ProductDetails({productData, updateCart}) {
     const { id, name, description, price, features, includes, slug } = productData;
     const [quantity, setQuantity] = useState(1);
 
@@ -30,7 +30,7 @@ function ProductDetails({productData, addToCart}) {
                     <div>
                         <input type="number" name="quantity" id="quantity" min="1" onChange={updateQuantity} defaultValue="1" />
                         <Link to="/cart">
-                            <button className="btn primary-btn" onClick={() => addToCart(productData, quantity)}>Add to cart</button>
+                            <button className="btn primary-btn" onClick={() => updateCart(productData, quantity)}>Add to cart</button>
                         </Link>
                     </div>
                 </div>

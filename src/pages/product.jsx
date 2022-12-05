@@ -11,7 +11,7 @@ import Footer from "../components/Footer"
 
 import data from "../assets/data.json"
 
-function ProductPage({addToCart}) {
+function ProductPage({updateCart}) {
     const location = useLocation();
     const productId = location.state.productId;
 
@@ -23,7 +23,7 @@ function ProductPage({addToCart}) {
             <ProductDetails 
                 key={productData.id} 
                 productData={productData} 
-                addToCart={addToCart} />
+                updateCart={updateCart} />
             <Gallery 
                 productData={productData} />
             <Categories />

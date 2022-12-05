@@ -11,7 +11,9 @@ function Summary({cart, total, removeFromCart}) {
                  <ScreenSizeContext.Consumer>
                     {screenSize => 
                         cart.map((item, i) => 
-                            <li key={i}>
+                            <li 
+                             key={i} 
+                             className="product-summary">
                                 <img src={require(`../assets/product-${item.productData.slug}/${screenSize}/image-category-page-preview.jpg`)} alt={item.productData.name} className="img" />
                                 <div>
                                     <div>
@@ -20,7 +22,7 @@ function Summary({cart, total, removeFromCart}) {
                                     </div>
                                     <p>x{item.quantity}</p>
                                 </div>
-                                {/* <button className="remove-item-btn" onClick={() => removeFromCart(item.productData.id)}>remove item</button> */}
+                                <button className="remove-item-btn" onClick={() => removeFromCart(item.productData.id)}>remove item</button>
                             </li>
                     )}
                  </ScreenSizeContext.Consumer>
