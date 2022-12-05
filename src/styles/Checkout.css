@@ -90,6 +90,10 @@ input[type='radio']:checked:before {
 }
 
 @media (max-width: 480px) {
+    .checkout {
+        padding: 1.5rem;
+    }
+
     .checkout form div > div,
     .checkout form div > div:not(.cash-on-info) {
         display: inline;

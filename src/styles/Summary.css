@@ -1,14 +1,12 @@
-.summary-container {
+.summary {
     background-color: white;
     padding: 25px;
     width: 40%;
+    border-radius: 8px;
+    margin: 0;
 }
 
-.summary-container h3 {
-    text-transform: uppercase;
-}
-
-.summary-container ul {
+.summary ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -16,26 +14,23 @@
     padding: 0;
 }
 
-.summary-container li {
+.summary li {
     display: flex;
     gap: 20px;
     align-items: center;
     width: 100%;
 }
 
-.summary-container li div {
+.summary li div {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.summary li div > div {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.summary-container p {
-    margin: 0;
-}
-
-.summary-container li div p:first-child {
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .remove-item-btn {
@@ -49,8 +44,23 @@
     background: none;
 }
 
-.summary-container img {
-    width: 100px;
-    min-height: 100px;
+.summary img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
     border-radius: 10px;
+}
+
+@media (max-width: 1111px) {
+    .summary {
+        width: 100%;
+        max-width: 100%;
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .summary {
+        padding: 1.5rem;
+    }
 }

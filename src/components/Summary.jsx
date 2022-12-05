@@ -4,8 +4,8 @@ import { ScreenSizeContext } from "../App";
 
 function Summary({cart, total, removeFromCart}) {
     return (
-        <div className="summary-container">
-           <h3>Summary</h3>
+        <div className="summary container">
+           <h6>Summary</h6>
             {cart.length > 0 && 
             <ul>
                  <ScreenSizeContext.Consumer>
@@ -14,8 +14,10 @@ function Summary({cart, total, removeFromCart}) {
                             <li key={i}>
                                 <img src={require(`../assets/product-${item.productData.slug}/${screenSize}/image-category-page-preview.jpg`)} alt={item.productData.name} className="img" />
                                 <div>
-                                    <p>{item.productData.name}</p>
-                                    <p>${item.productData.price}</p>
+                                    <div>
+                                        <p>{item.productData.name}</p>
+                                        <p>${item.productData.price}</p>
+                                    </div>
                                     <p>x{item.quantity}</p>
                                 </div>
                                 {/* <button className="remove-item-btn" onClick={() => removeFromCart(item.productData.id)}>remove item</button> */}
