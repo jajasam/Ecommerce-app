@@ -75,5 +75,6 @@
 @media screen and (max-width: 480px) {
     .cart-modal {
         margin: 1.5rem;
+        width: 90%;
     }
 }
