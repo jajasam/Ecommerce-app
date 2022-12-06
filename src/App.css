@@ -115,6 +115,7 @@ input, a {
   padding: 1.3em 3em;
   cursor: pointer;
   transition: all 0.2s ease;
+  letter-spacing: 1px;
 }
 
 .primary-btn {

@@ -29,7 +29,7 @@ function Summary({cart, total, removeFromCart}) {
                     )}
                  </ScreenSizeContext.Consumer>
                  <p>TOTAL ${total}</p>
-                <Link to="/" onClick={() => alert("Thank you for your order!")}>
+                <Link to="/" aria-label="Home" onClick={() => alert("Thank you for your order!")}>
                     <button className="primary-btn btn">Continue and pay</button>
                 </Link>
             </ul>}

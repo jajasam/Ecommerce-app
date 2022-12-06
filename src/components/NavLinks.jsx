@@ -7,7 +7,7 @@ function NavLinks() {
     <nav className="nav-links">
         <ul>
             <li>
-                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/" aria-label="Home" className="nav-link">Home</Link>
             </li>
             <li>
                 <Link to={"/category/headphones"} state={{category: "headphones"}} className="nav-link">Headphones</Link>

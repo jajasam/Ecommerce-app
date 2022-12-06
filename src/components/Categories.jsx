@@ -11,7 +11,7 @@ function Categories() {
                 require(`../assets/shared/desktop/image-category-thumbnail-${category.toLowerCase()}.png`)}
              alt={category}
             />
-            <h6>{category}</h6>
+            <p>{category}</p>
             <Link
                 to={`/category/${category.toLowerCase()}`} 
                 state={{category: `${category.toLowerCase()}`}}

@@ -45,7 +45,7 @@ function Header({ isOnHero, displayCategory }) {
                     {
                         isMenuOpen && <Menu />
                     }
-                    <Link to="/">
+                    <Link to="/" aria-label="Home">
                         <div className="logo"></div>
                     </Link>
                 </div>
