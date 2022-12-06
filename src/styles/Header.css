@@ -11,6 +11,8 @@
   opacity: 0.5;
   position: fixed;
   z-index: 100;
+  top: 0;
+  cursor: pointer;
 }
 
 header .content {
@@ -68,6 +70,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
 }
 
 .cart {

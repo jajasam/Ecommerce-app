@@ -8,7 +8,7 @@ function cart({cart, total, removeFromCart}) {
     return (
         <>
             <Header />
-            <div className="cart-content">
+            <div className="cart-content container">
                 <Checkout />
                 <Summary cart={cart} total={total} removeFromCart={removeFromCart} />
             </div>

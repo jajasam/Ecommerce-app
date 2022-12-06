@@ -62,6 +62,7 @@
 
 #ZX9-speaker button:hover {
   background-color: #4c4c4c;
+  color: white;
 }
 
 #ZX7-speaker {
@@ -85,6 +86,16 @@
 #YX1-earphones h3 {
     font-size: 28px;
     text-transform: uppercase;
+}
+
+#ZX7-speaker button,
+#YX1-earphones button {
+  color: black;
+}
+
+#ZX7-speaker button:hover,
+#YX1-earphones button:hover {
+  color: white;
 }
 
 #YX1-earphones {

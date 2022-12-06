@@ -24,6 +24,14 @@ function Header({ isOnHero, displayCategory }) {
         setIsCartOpen(prev => !prev)
     }
 
+    //close menu or cart if overlay is clicked
+    window.addEventListener('click', (e) => {
+        if (e.target.classList.contains('overlay')) {
+            setIsCartOpen(false)
+            setIsMenuOpen(false)
+        }
+    })
+
     return (
         <header 
          className={`${isOnHero ? '' : 'header-bg'} ${isMenuOpen || isCartOpen ? 'overlay' : ''}`}>

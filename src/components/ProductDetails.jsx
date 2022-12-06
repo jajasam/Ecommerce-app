@@ -11,7 +11,7 @@ function ProductDetails({productData, updateCart}) {
     }
 
     return (
-        <div className="product_container container">
+        <section className="product_container container">
             <div className="top">
                 <ScreenSizeContext.Consumer>
                     {screenSize => (
@@ -44,7 +44,7 @@ function ProductDetails({productData, updateCart}) {
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

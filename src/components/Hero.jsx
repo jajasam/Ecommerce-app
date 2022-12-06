@@ -5,7 +5,7 @@ import Header from "./Header";
 
 function Hero() {
     return (
-        <div className="hero">
+        <section className="hero">
             <div className="hero-img">
                 <Header isOnHero={true} />
                 <div className="hero-info">
@@ -17,7 +17,7 @@ function Hero() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

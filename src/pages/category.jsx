@@ -9,7 +9,6 @@ import Header from "../components/Header";
 import ProductOverview from "../components/ProductOverview"
 import BestGear from "../components/BestGear";
 import Categories from "../components/Categories";
-import Footer from "../components/Footer";
 
 
 function Category() {
@@ -38,13 +37,13 @@ function Category() {
     return (
         <>
             <Header displayCategory={true} />
-            <div className="products container">
+            <section className="products container">
                 {
                     filteredProducts && 
                     filteredProducts.map((product, i) => 
                     <ProductOverview productData={product} key={i} isOdd={i % 2 !== 0 ? true : false} />)
                 }
-            </div>
+            </section>
             <Categories />
             <BestGear />
         </>
