@@ -6,7 +6,7 @@ function Gallery({productData}) {
 
     return (
     <>
-        <div className="gallery container">
+        <section className="gallery container">
             <ScreenSizeContext.Consumer>
                 {
                     screenSize => <>
@@ -29,7 +29,7 @@ function Gallery({productData}) {
                 </>
                 }
             </ScreenSizeContext.Consumer>
-        </div>
+        </section>
     </>
     )
 }

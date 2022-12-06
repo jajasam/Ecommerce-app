@@ -22,6 +22,10 @@
     max-width: 40%;
 }
 
+.product-infos h2 {
+    font-size: 40px;
+}
+
 .product-infos p {
     padding-bottom: 8px;
 }

@@ -22,7 +22,7 @@ function Product({productData, isOdd}) {
                     productData.new && 
                     <p className="overline">New product</p>
                 }
-                <h3>{name}</h3>
+                <h2>{name}</h2>
                 <p>{description}</p>
                 <Link to={`/product/${id}`} state={{productId: id}}>
                     <button className="btn primary-btn">See product</button>

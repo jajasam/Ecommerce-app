@@ -29,12 +29,12 @@ function YouMayAlsoLike({ products, data }) {
     </div>
     )})
     return (
-        <>
-        <h3>You may also like</h3>
-        <div className="other-products container">
-            {productsElem}
-        </div>
-        </>
+        <section className="you-may-also-like">
+            <h3>You may also like</h3>
+            <div className="other-products container">
+                {productsElem}
+            </div>
+        </section>
     )
 }
 

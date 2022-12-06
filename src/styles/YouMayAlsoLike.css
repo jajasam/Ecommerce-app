@@ -1,3 +1,7 @@
+.you-may-also-like {
+    text-align: center;
+}
+
 .other-products {
     display: flex;
     gap: 30px;
@@ -32,5 +36,17 @@
 @media screen and (max-width: 500px) {
     .other-products {
         flex-direction: column;
+        gap: 100px;
+        margin-bottom: 160px;
+    }
+
+    .other-products img {
+        height: 200px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .other-products h5 {
+        min-height: auto;
     }
 }

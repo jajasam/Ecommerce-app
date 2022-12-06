@@ -23,9 +23,9 @@ function ProductDetails({productData, updateCart}) {
                         productData.new && 
                         <p className="overline">New product</p>
                     }
-                    <h3>{name}</h3>
+                    <h2>{name}</h2>
                     <p>{description}</p>
-                    <h6 className="price">$ {price}</h6>
+                    <p className="price">$ {price}</p>
                     <div>
                         <input type="number" name="quantity" id="quantity" min="1" onChange={updateQuantity} defaultValue="1" />
                         <button className="btn primary-btn" onClick={() => updateCart(productData, quantity)}>Add to cart</button>
@@ -34,11 +34,11 @@ function ProductDetails({productData, updateCart}) {
             </div>
             <div className="bottom">
                 <div className="features">
-                    <h4>Features</h4>
+                    <h3>Features</h3>
                     <p>{features}</p>
                 </div>
                 <div className="in-the-box">
-                    <h4>In the box</h4>
+                    <h3>In the box</h3>
                     <ul>
                         {includes.map((include, i) => <li key={i}><span>{include.quantity}x</span><span>{include.item}</span></li>)}
                     </ul>
