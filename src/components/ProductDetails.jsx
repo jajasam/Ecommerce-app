@@ -40,7 +40,7 @@ function ProductDetails({productData, updateCart}) {
                 <div className="in-the-box">
                     <h4>In the box</h4>
                     <ul>
-                        {includes.map((include, i) => <li key={i}><span>{include.quantity}</span><span>{include.item}</span></li>)}
+                        {includes.map((include, i) => <li key={i}><span>{include.quantity}x</span><span>{include.item}</span></li>)}
                     </ul>
                 </div>
             </div>

@@ -33,8 +33,6 @@ function ProductPage({updateCart}) {
             />
             <Categories />
             <BestGear />
-            <Footer />
-
         </>
     )
 }

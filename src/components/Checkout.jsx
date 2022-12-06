@@ -58,7 +58,7 @@ function Checkout() {
                     <div>
                         <p>Payment method</p>
                         <div>
-                            <div className="payment-method">
+                            <div className="radio">
                                 <input 
                                  type="radio" 
                                  id="e-money" 
@@ -66,17 +66,20 @@ function Checkout() {
                                  value="e-money" 
                                  onChange={(e) => handlePaymentMethod(e)}
                                 />
-                                <label htmlFor="e-money">e-Money</label>
+                                <label htmlFor="e-money">e-Money
+                                </label>
                             </div>
-                            <div className="payment-method">
+                            <div className="radio">
                                 <input 
-                                 type="radio" 
-                                 id="cash-on" 
-                                 name="payment-method" 
-                                 value="cash-on" 
-                                 onChange={(e) => handlePaymentMethod(e)}
-                                  />
-                                <label htmlFor="css">Cash on Delivery</label>
+                                type="radio" 
+                                id="cash-on" 
+                                name="payment-method" 
+                                value="cash-on" 
+                                onChange={(e) => handlePaymentMethod(e)}
+                                />
+                                <label htmlFor="css">
+                                    Cash on Delivery
+                                </label>
                             </div>
                         </div>
                         {
