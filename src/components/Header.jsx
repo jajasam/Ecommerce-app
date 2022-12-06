@@ -14,13 +14,24 @@ function Header({ isOnHero, displayCategory }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isCartOpen, setIsCartOpen] = useState(false)
 
+    function handleMenuDisplay () {
+        setIsCartOpen(false)
+        setIsMenuOpen(prev => !prev)
+    }
+
+    function handleCartDisplay () {
+        setIsMenuOpen(false)
+        setIsCartOpen(prev => !prev)
+    }
+
     return (
-        <header className={isOnHero ? '' : 'header-bg'}>
+        <header 
+         className={`${isOnHero ? '' : 'header-bg'} ${isMenuOpen || isCartOpen ? 'overlay' : ''}`}>
             <div className="content">
                 <div className="top">
                     <div 
                      className="hamburger-icon"
-                     onClick={() => setIsMenuOpen(prev => !prev)}
+                     onClick={() => handleMenuDisplay()}
                     >
                     </div>
                     {
@@ -33,7 +44,7 @@ function Header({ isOnHero, displayCategory }) {
                 <NavLinks />
                 <div 
                  className="cart-icon"
-                 onClick={() => setIsCartOpen(prev => !prev)}
+                 onClick={() => handleCartDisplay()}
                 ></div>
                 {
                     isCartOpen && <CartModal />

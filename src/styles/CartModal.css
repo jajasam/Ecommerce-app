@@ -9,6 +9,7 @@
     max-width: 488px;
     margin: 2rem;
     border-radius: 8px;
+    z-index: 300;
 }
 
 .cart-modal div:first-child {
