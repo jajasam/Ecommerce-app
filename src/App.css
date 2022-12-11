@@ -106,6 +106,7 @@ img {
 
 input, a {
   font: inherit;
+  max-width: 200px;
 }
 
 .btn {
@@ -116,13 +117,13 @@ input, a {
   cursor: pointer;
   transition: all 0.2s ease;
   letter-spacing: 1px;
+  max-width: 200px;
 }
 
 .primary-btn {
   background-color: var(--orange1);
   border: none;
   color: var(--white0);
-  max-width: 160px;
 }
 
 .primary-btn:hover {
@@ -152,6 +153,12 @@ input, a {
 @media (max-width: 1111px) {
   .container {
     padding: 0 1.5rem;
+  }
+
+  input, 
+  a, 
+  .btn {
+    max-width: 160px;
   }
 }
 
