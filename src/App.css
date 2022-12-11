@@ -122,6 +122,7 @@ input, a {
   background-color: var(--orange1);
   border: none;
   color: var(--white0);
+  max-width: 160px;
 }
 
 .primary-btn:hover {
