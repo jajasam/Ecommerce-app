@@ -29,7 +29,6 @@ function ProductPage({updateCart}) {
              productData={productData} />
             <YouMayAlsoLike 
              products={productData.others}  
-             data={data}
             />
             <Categories />
             <BestGear />

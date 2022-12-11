@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ScreenSizeContext } from "../App";
 
+import data from '../assets/data.json'
+
 import '../styles/YouMayAlsoLike.css'
 
 
-function YouMayAlsoLike({ products, data }) {
+function YouMayAlsoLike({ products }) {
     const productsElem = products.map(({slug, name, image},i) => {
-        const product = data.filter(product => product.name === name)
-        const id = product[0]?.id
+        let product = data.find(pro => pro.slug === slug)
+        let id = product?.id;
     return (
     <div key={i}>
         <ScreenSizeContext.Consumer>
@@ -23,7 +25,7 @@ function YouMayAlsoLike({ products, data }) {
         <h5>{name}</h5>
         <Link 
          to={`/product/${id && id}`} 
-        state={{productId: id}}>
+        state={{productId: id && id}}>
             <button className="btn primary-btn">See product</button>
         </Link>
     </div>
