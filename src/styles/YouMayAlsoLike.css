@@ -12,11 +12,12 @@
 .other-products div {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 32px;
+    align-items: center;
 }
 
 .other-products h5 {
-    min-height: 75px;
+    min-height: 32px;
 }
 
 .other-products img {
